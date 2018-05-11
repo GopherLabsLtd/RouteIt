@@ -5,7 +5,7 @@ let mainRouter = RouteProvider<RouteService>()
 
 enum RouteService {
     case page1
-    case page2
+    case page2(name: String, title: String)
 }
 
 extension RouteService: RouteTargetType {
@@ -23,7 +23,16 @@ extension RouteService: RouteTargetType {
     }
     
     var parameters: RouteParameters {
-        return .none
+        switch self {
+        case .page1:
+            return .none
+        case let .page2(name, title):
+            let params: Parameters = [
+                "name": name,
+                "title": title
+            ]
+            return .urlParameters(params)
+        }
     }
     
     var routeHandler: RouteHandler {
@@ -44,6 +53,6 @@ extension RouteService: RouteTargetType {
     }
     
     static var allRoutes: [RouteTargetType] {
-        return [RouteService.page1, RouteService.page2]
+        return [RouteService.page1, RouteService.page2(name: "", title: "")]
     }
 }

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         mainRouter.dispatch(.page1)
     }
     @IBAction func page2ButtonPressed(_ sender: Any) {
-        mainRouter.dispatch(.page2)
+        mainRouter.dispatch(.page2(name: "test", title: "test"))
     }
 }
 

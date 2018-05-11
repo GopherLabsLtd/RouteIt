@@ -28,9 +28,8 @@ extension DPLDeepLinkRouter: RouteClient {
             UIApplication.shared.open(route.baseURL.appendingPathComponent(route.path),
                                       options: [:], completionHandler: nil)
         case .urlParameters(let parameters):
-            // TODO - Add in parameters.
-            UIApplication.shared.open(route.baseURL.appendingPathComponent(route.path),
-                                      options: [:], completionHandler: nil)
+            UIApplication.shared.open(route.baseURL.appendingPathComponent(route.path)
+                .appendQueryParameters(parameters: parameters), options: [:], completionHandler: nil)
         }
     }
 }

@@ -17,6 +17,7 @@
 		46BB53C120A51BF400D0C2C8 /* RouteParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C020A51BF400D0C2C8 /* RouteParameters.swift */; };
 		46BB53C320A51CE200D0C2C8 /* RouteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C220A51CE200D0C2C8 /* RouteProvider.swift */; };
 		46BB53C520A51F8600D0C2C8 /* RouteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C420A51F8600D0C2C8 /* RouteClient.swift */; };
+		46BB53C920A6192400D0C2C8 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C820A6192400D0C2C8 /* URL+QueryParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		46BB53C020A51BF400D0C2C8 /* RouteParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteParameters.swift; sourceTree = "<group>"; };
 		46BB53C220A51CE200D0C2C8 /* RouteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProvider.swift; sourceTree = "<group>"; };
 		46BB53C420A51F8600D0C2C8 /* RouteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteClient.swift; sourceTree = "<group>"; };
+		46BB53C820A6192400D0C2C8 /* URL+QueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParameters.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				46BB53C020A51BF400D0C2C8 /* RouteParameters.swift */,
 				46BB53C220A51CE200D0C2C8 /* RouteProvider.swift */,
 				46BB53C420A51F8600D0C2C8 /* RouteClient.swift */,
+				46BB53C820A6192400D0C2C8 /* URL+QueryParameters.swift */,
 			);
 			path = RouteIt;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				46BB53BF20A51A2B00D0C2C8 /* RouteIt+TypeAlias.swift in Sources */,
 				46BB53C520A51F8600D0C2C8 /* RouteClient.swift in Sources */,
 				46BB53BD20A516BD00D0C2C8 /* RouteTargetType.swift in Sources */,
+				46BB53C920A6192400D0C2C8 /* URL+QueryParameters.swift in Sources */,
 				46BB53BB20A5158400D0C2C8 /* DeeplinkKit+RouteIt.swift in Sources */,
 				46BB53C120A51BF400D0C2C8 /* RouteParameters.swift in Sources */,
 			);
