@@ -10,6 +10,13 @@
 		46BB536520A50A2C00D0C2C8 /* RouteIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB535B20A50A2C00D0C2C8 /* RouteIt.framework */; };
 		46BB536A20A50A2C00D0C2C8 /* RouteItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB536920A50A2C00D0C2C8 /* RouteItTests.swift */; };
 		46BB536C20A50A2C00D0C2C8 /* RouteIt.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BB535E20A50A2C00D0C2C8 /* RouteIt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BB53B920A5155C00D0C2C8 /* DeepLinkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BB53B820A5155C00D0C2C8 /* DeepLinkKit.framework */; };
+		46BB53BB20A5158400D0C2C8 /* DeeplinkKit+RouteIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53BA20A5158400D0C2C8 /* DeeplinkKit+RouteIt.swift */; };
+		46BB53BD20A516BD00D0C2C8 /* RouteTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53BC20A516BD00D0C2C8 /* RouteTargetType.swift */; };
+		46BB53BF20A51A2B00D0C2C8 /* RouteIt+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53BE20A51A2B00D0C2C8 /* RouteIt+TypeAlias.swift */; };
+		46BB53C120A51BF400D0C2C8 /* RouteParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C020A51BF400D0C2C8 /* RouteParameters.swift */; };
+		46BB53C320A51CE200D0C2C8 /* RouteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C220A51CE200D0C2C8 /* RouteProvider.swift */; };
+		46BB53C520A51F8600D0C2C8 /* RouteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB53C420A51F8600D0C2C8 /* RouteClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		46BB536420A50A2C00D0C2C8 /* RouteItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BB536920A50A2C00D0C2C8 /* RouteItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteItTests.swift; sourceTree = "<group>"; };
 		46BB536B20A50A2C00D0C2C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BB53B820A5155C00D0C2C8 /* DeepLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeepLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BB53BA20A5158400D0C2C8 /* DeeplinkKit+RouteIt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeeplinkKit+RouteIt.swift"; sourceTree = "<group>"; };
+		46BB53BC20A516BD00D0C2C8 /* RouteTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTargetType.swift; sourceTree = "<group>"; };
+		46BB53BE20A51A2B00D0C2C8 /* RouteIt+TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouteIt+TypeAlias.swift"; sourceTree = "<group>"; };
+		46BB53C020A51BF400D0C2C8 /* RouteParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteParameters.swift; sourceTree = "<group>"; };
+		46BB53C220A51CE200D0C2C8 /* RouteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProvider.swift; sourceTree = "<group>"; };
+		46BB53C420A51F8600D0C2C8 /* RouteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BB53B920A5155C00D0C2C8 /* DeepLinkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +71,7 @@
 				46BB535D20A50A2C00D0C2C8 /* RouteIt */,
 				46BB536820A50A2C00D0C2C8 /* RouteItTests */,
 				46BB535C20A50A2C00D0C2C8 /* Products */,
+				46BB53B720A5155C00D0C2C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +87,13 @@
 		46BB535D20A50A2C00D0C2C8 /* RouteIt */ = {
 			isa = PBXGroup;
 			children = (
-				46BB535E20A50A2C00D0C2C8 /* RouteIt.h */,
-				46BB535F20A50A2C00D0C2C8 /* Info.plist */,
+				46BB53A420A513D300D0C2C8 /* Supporting Files */,
+				46BB53BA20A5158400D0C2C8 /* DeeplinkKit+RouteIt.swift */,
+				46BB53BC20A516BD00D0C2C8 /* RouteTargetType.swift */,
+				46BB53BE20A51A2B00D0C2C8 /* RouteIt+TypeAlias.swift */,
+				46BB53C020A51BF400D0C2C8 /* RouteParameters.swift */,
+				46BB53C220A51CE200D0C2C8 /* RouteProvider.swift */,
+				46BB53C420A51F8600D0C2C8 /* RouteClient.swift */,
 			);
 			path = RouteIt;
 			sourceTree = "<group>";
@@ -84,6 +105,23 @@
 				46BB536B20A50A2C00D0C2C8 /* Info.plist */,
 			);
 			path = RouteItTests;
+			sourceTree = "<group>";
+		};
+		46BB53A420A513D300D0C2C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46BB535E20A50A2C00D0C2C8 /* RouteIt.h */,
+				46BB535F20A50A2C00D0C2C8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46BB53B720A5155C00D0C2C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46BB53B820A5155C00D0C2C8 /* DeepLinkKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +186,7 @@
 				TargetAttributes = {
 					46BB535A20A50A2C00D0C2C8 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					46BB536320A50A2C00D0C2C8 = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BB53C320A51CE200D0C2C8 /* RouteProvider.swift in Sources */,
+				46BB53BF20A51A2B00D0C2C8 /* RouteIt+TypeAlias.swift in Sources */,
+				46BB53C520A51F8600D0C2C8 /* RouteClient.swift in Sources */,
+				46BB53BD20A516BD00D0C2C8 /* RouteTargetType.swift in Sources */,
+				46BB53BB20A5158400D0C2C8 /* DeeplinkKit+RouteIt.swift in Sources */,
+				46BB53C120A51BF400D0C2C8 /* RouteParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +384,7 @@
 		46BB537020A50A2C00D0C2C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,7 +392,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouteIt/Info.plist;
+				INFOPLIST_FILE = "RouteIt/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.gopher.RouteIt;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +411,7 @@
 		46BB537120A50A2C00D0C2C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -371,7 +419,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouteIt/Info.plist;
+				INFOPLIST_FILE = "RouteIt/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +437,7 @@
 		46BB537320A50A2C00D0C2C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZY7497MHJE;
 				INFOPLIST_FILE = RouteItTests/Info.plist;
@@ -407,6 +456,7 @@
 		46BB537420A50A2C00D0C2C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZY7497MHJE;
 				INFOPLIST_FILE = RouteItTests/Info.plist;

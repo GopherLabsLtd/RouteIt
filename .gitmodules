@@ -4,3 +4,6 @@
 [submodule "Carthage/Checkouts/Quick"]
 	path = Carthage/Checkouts/Quick
 	url = https://github.com/Quick/Quick.git
+[submodule "Carthage/Checkouts/DeepLinkKit"]
+	path = Carthage/Checkouts/DeepLinkKit
+	url = https://github.com/button/DeepLinkKit.git
